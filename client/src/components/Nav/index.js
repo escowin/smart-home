@@ -12,7 +12,7 @@ function Nav(params) {
     <header className="section">
       <h1>
         <a data-testid="link" href="/">
-          Smart Home
+          Smart home
         </a>
       </h1>
       <nav>
@@ -65,11 +65,11 @@ function Nav(params) {
           ) : (
             <>
               <li className="mx-2">
-                <Link to="login">Create Project</Link>
+                <Link to="login">+ project</Link>
               </li>
               <li className="mx-2">
                 <a data-testid="join" href="/Smarter">
-                  Join Our Smart Network
+                  join smart network
                 </a>
               </li>
               <li className="mx-2">
@@ -80,7 +80,7 @@ function Nav(params) {
 
               <li className="mx-2">
                 <a data-testid="join" href="/signup">
-                  Sign Up
+                  sign up
                 </a>
               </li>
             </>

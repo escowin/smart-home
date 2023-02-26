@@ -9,10 +9,17 @@ import ImgLights from "../../assets/images/lights.webp";
 import Imggd from "../../assets/images/gd.jpeg";
 import Imgphone from "../../assets/images/phone.jpeg";
 
-const MostPopular = () => {
+const Popular = () => {
+  const popular = [
+    {
+      name: "wifi optimization",
+      img: "wifi.jpeg"
+    }
+  ]
+
   return (
-    <section className="my-5" id="most-popular">
-      <h2>Popular Smart Installations</h2>
+    <>
+      <h2>Trending services</h2>
       <article className="card-container">
         <div className="project-card">
           <Link to="/CreateProject" className="card" style={{ width: "18rem" }}>
@@ -81,7 +88,7 @@ const MostPopular = () => {
           </Link>
         </div>
       </article>
-    </section>
+    </>
   );
 };
-export default MostPopular;
+export default Popular;

@@ -15,7 +15,6 @@
   font-family: 'Lexend Mega', sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  /* visual aid below (delete later) */
   /* outline: 1px dotted white; */
 }
 
@@ -27,13 +26,21 @@
   gap: 1rem;
   background-color: var(--blue);
   color: var(--white);
-  padding: .25rem;
+  padding: 0 .5rem;
 }
 
 .section {
   background-color: var(--orange);
   border-radius: .25rem;
   padding: .25rem;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
 }
 
 ul, ol {

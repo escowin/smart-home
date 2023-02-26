@@ -1,15 +1,12 @@
 import React from "react";
-import Landingpage from "../landingPage";
-
+import Landingpage from "../LandingPage";
 
 const Home = () => {
-	return (
-		<main>
-			<div className="flex-row justify-space-between">
-				<Landingpage></Landingpage>
-			</div>
-		</main>
-	);
+  return (
+    <main className="section">
+      <Landingpage></Landingpage>
+    </main>
+  );
 };
 
 export default Home;
