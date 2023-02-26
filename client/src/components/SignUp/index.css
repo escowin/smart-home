@@ -1,0 +1,21 @@
+.signup-form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;  
+}
+
+input {
+    border-radius: .25rem;
+    border: none;
+    padding: 0 .5rem;
+}
+
+.form-btn {
+    grid-column: span 2;
+    border-radius: .25rem;
+    border: none;
+    transition: 1s color;
+}
+
+
+
