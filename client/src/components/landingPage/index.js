@@ -17,7 +17,7 @@ const Landingpage = () => {
 				<span className="primary-text">
 					{" "}
 					<h1>
-						<Typical
+						{/* <Typical
 							loop={Infinity}
 							steps={[
 								"Enhance Your Lifestyle",
@@ -29,7 +29,7 @@ const Landingpage = () => {
 								"Secure Your Home",
 								1000,
 							]}
-						/>
+						/> */}
 					</h1>
 				</span>
 			</div>

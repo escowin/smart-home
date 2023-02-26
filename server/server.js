@@ -39,21 +39,21 @@ app.use(cors());
 app.use("/", router);
 
 // Replace the user and password with your account info to receive form submission to your email
-const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: "smarthomeutbootcamp@gmail.com",
-    pass: "algorithmunlock123",
-  },
-});
+// const contactEmail = nodemailer.createTransport({
+//   service: 'gmail',
+//   auth: {
+//     user: "smarthomeutbootcamp@gmail.com",
+//     pass: "algorithmunlock123",
+//   },
+// });
 
-contactEmail.verify((error) => {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log("Ready to Send");
-  }
-});
+// contactEmail.verify((error) => {
+//   if (error) {
+//     console.log(error);
+//   } else {
+//     console.log("Ready to Send");
+//   }
+// });
 
 router.post("/contact", (req, res) => {
   const name = req.body.name;
