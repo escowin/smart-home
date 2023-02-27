@@ -24,3 +24,24 @@
     height: var(--size);
     border-radius: 50%;
 }
+
+@media screen and (min-width: 1024px) {
+
+    * {
+        /* outline: 1px dotted white; */
+    }
+
+    .title {
+        flex-grow: 0;
+    }
+    
+    .trending {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .trending-img {
+        --size: 20vh;
+    }
+
+
+}

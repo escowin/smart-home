@@ -49,42 +49,39 @@ function App() {
       <Router>
         <div className="body">
           <Nav />
-          {/* <div className="container"></div> */}
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/login" component={Login} />
-            <Route
-              exact
-              path="/YourProject/:userName?"
-              component={YourProject}
-            />
-            <Route
-              exact
-              path="/ApprovedJob/:userName?"
-              component={ApprovedJob}
-            />
-            <Route exact path="/signup" component={Signup} />
-            <Route exact path="/Smarter" component={Csignup} />
-            <Route exact path="/project/:id" component={Project} />
-            <Route exact path="/CreateProject" component={CreateProject} />
-            <Route exact path="/Job" component={Job} />
-            <Route exact path="/ContactUs" component={ContactUs} />
-            <Route exact path="/Account" component={Account} />
-            <Route
-              exact
-              path="/EnergyManagement"
-              component={EnergyManagement}
-            />
-            <Route
-              exact
-              path="/Connectivity"
-              component={Connectivity}
-            />
-            <Route exact path="/HomeSecurity" component={HomeSecurity} />
-            <Route exact path="/Account" component={Account} />
+          <main>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/login" component={Login} />
+              <Route
+                exact
+                path="/YourProject/:userName?"
+                component={YourProject}
+              />
+              <Route
+                exact
+                path="/ApprovedJob/:userName?"
+                component={ApprovedJob}
+              />
+              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/Smarter" component={Csignup} />
+              <Route exact path="/project/:id" component={Project} />
+              <Route exact path="/CreateProject" component={CreateProject} />
+              <Route exact path="/Job" component={Job} />
+              <Route exact path="/ContactUs" component={ContactUs} />
+              <Route exact path="/Account" component={Account} />
+              <Route
+                exact
+                path="/EnergyManagement"
+                component={EnergyManagement}
+              />
+              <Route exact path="/Connectivity" component={Connectivity} />
+              <Route exact path="/HomeSecurity" component={HomeSecurity} />
+              <Route exact path="/Account" component={Account} />
 
-            <Route component={NoMatch} />
-          </Switch>
+              <Route component={NoMatch} />
+            </Switch>
+          </main>
         </div>
       </Router>
     </ApolloProvider>

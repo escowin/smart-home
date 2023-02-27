@@ -24,3 +24,15 @@ nav {
     gap: .5rem;
     font-size: 80%;
 }
+
+@media screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    nav {
+        width: auto;
+        flex-grow: 1;
+    }
+}

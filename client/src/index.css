@@ -1,7 +1,7 @@
 /* COLOR PALETTE */
 :root {
-  --orange: rgb(168, 101, 14);
-  --blue: rgb(47, 78, 124);
+  --orange: rgb(155, 95, 38);
+  --blue: rgb(38, 62, 92);
   --white: rgb(235, 225, 225);
   --accent: rgba(190, 160, 160, 0.75);
 }
@@ -23,14 +23,14 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  background-color: var(--blue);
+  background-color: var(--orange);
   color: var(--white);
   padding: 0 .5rem .5rem .5rem;
   min-height: 100vh;
 }
 
 .section {
-  background-color: var(--orange);
+  background-color: var(--blue);
   border-radius: .25rem;
   padding: .25rem;
   width: 100%;
@@ -56,4 +56,14 @@ a, .link {
 
 a:hover, .link:hover, .active {
   color: var(--blue);
+}
+
+@media screen and (min-width: 1024px) {
+  .body {
+    padding: 0 0 0 .5rem;
+  }
+  
+  main {
+    align-items: flex-start;
+  }
 }
